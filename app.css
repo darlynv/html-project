@@ -1,0 +1,245 @@
+/* CSS reset begin */
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/* CSS reset end */
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+.container {
+    height: 100vh;
+    display: grid;
+    grid-template-areas: 
+        "nav nav"
+        "section section"
+        "resume uni";
+    grid-template-columns: 1fr 1fr;
+}
+
+nav {
+    grid-area: nav;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 3.5rem;
+    font-weight: 700;
+    background-color: #e76f51;
+}
+
+section {
+    grid-area: section;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #f4a261;
+    box-sizing: border-box;
+}
+
+section h2 {
+    font-size: 3rem;
+    font-weight: 600;
+    padding-bottom: 40px
+}
+
+section ul {
+    font-size: 2rem;
+}
+
+.resume {
+    grid-area: resume;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #2a9d8f;
+    font-size: 1.75rem;
+    box-sizing: border-box;
+}
+
+.uni {
+    grid-area: uni;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #264653;
+    font-size: 1.75rem;
+    box-sizing: border-box;
+}
+
+li {
+    padding: 8px;
+}
+
+a {
+    font-size: 2rem;
+    font-weight: 600;
+    color: white;
+    text-decoration: none;
+}
+
+a:hover {
+    animation: ease-in-out;
+
+        font-size: 2.5rem;
+}
+
+.bmcc {
+    height: auto;
+}
+
+.bmcc-details {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    padding: 0px 100px;
+}
+
+p {
+    padding-right: 50px;
+    font-size: 2rem;
+}
+
+img {
+    width: 600px;
+}
+
+.back {
+    width: 200%;
+    height: 100%;
+    background-color: #2a9d8f;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+
+}
